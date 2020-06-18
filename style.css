@@ -1,25 +1,33 @@
-body{
+body {
     font-family: sans-serif;
     color:black;
-}
-
-.Imp_text h1{
-    font-family:inherit;
-    color:black
+    margin:0px;
 }
    
-.top{
+.top {
     margin-left:14px;
-    margin-top:20px;
     margin-left:14px;
+    padding-top:20px;
+    text-align:center;
 }
         
 .topnav {
     background-color: grey;
     overflow: hidden;
-    margin-left:14px;
-    margin-top:14px;
-    margin-right:14px;
+}
+
+.Imp_text:hover {
+    color:darkcyan;
+}
+
+.links {
+    text-decoration:none;
+}
+
+.links:hover {
+    background-color:antiquewhite;
+    font-family: monospace;
+    font-size:16px;
 }
         
 .topnav a {
@@ -37,6 +45,6 @@ body{
 }
 
 .topnav a.active {
-    background-color: forestgreen;
+    background-color: deepskyblue;
     color: white;
 }
