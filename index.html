@@ -4,13 +4,17 @@
     <head>     
         <title>Homepage</title>     
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
         <div class="topnav">
-            <a class="active" href="index.html">Home</a>
+            <a class="active" href="#home">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <button class="inputbox_button" onclick="myfunction()"><i class="fa fa-search"></i></button>
+            <input class="inputbox" id="myinput">
+            
         </div>
        
         <div class="top">
@@ -21,9 +25,19 @@
             <img src="Beach.png" style="width:1000px;">
         
             <div class="bottom">
-              <p class="bottom_text">This is a test website, gonna improve it later on</p>
+                <p class="bottom_text">This is a test website, gonna improve it later on</p>
             </div>
         </div>
     </body>
+    
+    <script>
+        
+        function myfunction(){
+            myinput = document.getElementById("myinput");
+            alert(myinput.value)
+            myinput.value = "";
+        }
+        
+    </script>
     
 </html>
