@@ -7,6 +7,7 @@ body {
 .topnav {
     background-color: grey;
     overflow: hidden;
+    margin:0px;
 }
 
 .Imp_text:hover {
@@ -23,23 +24,57 @@ body {
     font-size:16px;
 }
         
+.topnav {
+    background-color:cornflowerblue;
+    overflow: hidden;
+    margin: 0px;
+}
+
 .topnav a {
-    color:white;
-    float: left;
+    float:left;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
 }
-        
+
+
 .topnav a:hover {
-    background-color: gainsboro;
+    background-color: #ddd;
     color: black;
 }
 
 .topnav a.active {
-    background-color: deepskyblue;
+    background-color:black;
     color: white;
+}
+
+
+.inputbox {
+    margin-top: 12px; 
+    margin-bottom: 10px;
+    margin-right:10px;
+    height:27px;
+    float: right;
+}
+
+.inputbox_button {
+    margin-top: 12px; 
+    margin-bottom: 10px;
+    margin-right:17px;
+    width:30px;
+    height:32px;
+    float: right;
+}
+
+.inputbox_button:hover{
+    background-color:dimgrey;
+    
+}
+
+#inputbox{
+    
 }
 
 .top {
@@ -123,3 +158,5 @@ button:hover, a:hover {
     padding-top:20px;
 }
 
+
+   
