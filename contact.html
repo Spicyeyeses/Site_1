@@ -48,5 +48,28 @@
         </div>
     </body>
     
+    <script>
+        
+        function myfunction() {
+            
+            data = [{pokemon:"bulbasur",type:"grass"},{pokemon: "pikachu",type:"electric"},{pokemon:"charmander",type:"fire"}];
+            
+            myinput = document.getElementById("myinput");
+            
+            for (i=0;i<3;i++) {
+                if (data[i]['pokemon'] == myinput.value.toLowerCase()) {
+                    alert(data[i]['type']);
+                    
+                } else {
+                    alert("Value not found!");
+                    break
+                }
+            }
+            
+            myinput.value = "";
+        }
+        
+    </script>
+    
     
 </html>
