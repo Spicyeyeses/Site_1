@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html> 
+    
+    <head>     
+        <title>Homepage</title>     
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="pokemon_data.json"></script>
+    </head>
+    
+    <body>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="pokemon.html">Pokemon</a>
+            <button class="inputbox_button" onclick="myfunction()"><i class="fa fa-search"></i></button>
+            <input class="inputbox" id="myinput">
+        </div>
+       
+        <div class="top">
+            <h1 class="Imp_text">Welcome to the Pokemon page</h1>
+            <p class="hover_text">Hi, this is a pokemon page where you can search for pokemons, if you would like to return to the home page, click <a class="links" href="index.html">here</a> if you would like to know more about this website, click <a class="links" href="about.html">Here</a>. If you would like to know the contact information for this website, click <a class="links" href="contact.html">Here</a><p>
+            
+            <h4 class="Imp_text">Please put the name of the pokemon into the search bar</h4>
+        </div>
+        
+
+        <div class="output_box">
+            <h2 class="poke_text2">Here you would see the details of the pokemon you search:</h2>
+            <h2 class="poke_text">Name:<h3 class="poke_text3" id="info1"></h3></h2>
+            <h2 class="poke_text">Type:<h3 class="poke_text3"  id="info2"></h3></h2>
+            <h2 class="poke_text">HP:<h3 class="poke_text3"  id="info3"></h3></h2>
+            <h2 class="poke_text">Attack:<h3 class="poke_text3"  id="info4"></h3></h2>
+            <h2 class="poke_text">Defense:<h3 class="poke_text3"  id="info5"></h3></h2>
+            <h2 class="poke_text">Speed:<h3 class="poke_text4"  id="info6"></h3></h2>         
+        </div>
+        
+        <div class="gif_sec">
+            <img class="gifs" src="pika.gif">
+        </div>
+        
+    </body>
+    
+    <script>   
+
+        var input = document.getElementById("myinput");
+
+        input.addEventListener("keyup", function(event) {
+ 
+            if (event.keyCode === 13) {
+
+                event.preventDefault();
+                
+                myfunction()
+
+            }
+        });
+        
+        function myfunction() {
+            
+            myinput = document.getElementById("myinput");
+            mydiv1 = document.getElementById("info1");
+            mydiv2 = document.getElementById("info2");
+            mydiv3 = document.getElementById("info3");
+            mydiv4 = document.getElementById("info4");
+            mydiv5 = document.getElementById("info5");
+            mydiv6 = document.getElementById("info6");
+            
+            for (i=0;i<data.length;i++) {
+                
+                if (data[i]['name']['english'].toLowerCase() == myinput.value.toLowerCase()) {
+                    
+                    mydiv1.innerHTML = "<h3>" + data[i]['name']['english'];
+                    mydiv2.innerHTML = "<h3>" + data[i]['type'][0];
+                    mydiv3.innerHTML = "<h3>" + data[i]['base']['HP'];
+                    mydiv4.innerHTML = "<h3>" + data[i]['base']['Attack'];
+                    mydiv5.innerHTML = "<h3>" + data[i]['base']['Defense'];
+                    mydiv6.innerHTML = "<h3>" + data[i]['base']['Speed'];
+                    return;
+                } 
+            }
+            alert("Value not found");
+            
+            myinput.value = "";
+        }
+
+        
+    </script>
+    
+</html>
