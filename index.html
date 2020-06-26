@@ -37,7 +37,10 @@
             for (i=0;i<3;i++) {
                 if (data[i]['pokemon'] == myinput.value.toLowerCase()) {
                     alert(data[i]['type']);
-                    break;
+                    
+                } else {
+                    alert("Value not found!");
+                    break
                 }
             }
             
