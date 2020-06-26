@@ -1,3 +1,6 @@
+html{
+}
+
 body {
     font-family: sans-serif;
     color:black;
@@ -12,6 +15,10 @@ body {
 
 .Imp_text:hover {
     color:darkcyan;
+}
+
+.fun_text:hover {
+    
 }
 
 .links {
@@ -50,6 +57,14 @@ body {
     color: white;
 }
 
+img:hover{
+    opacity:0.8;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition:all 0.2s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 .inputbox {
     margin-top: 12px; 
@@ -74,10 +89,15 @@ body {
 }
 
 .top {
-    margin-left:14px;
-    margin-right:14px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:30px;
     padding-top:20px;
     text-align:center;
+}
+
+.hover_text:hover{
+    opacity:0.5;
 }
 
 .fit {
@@ -91,9 +111,9 @@ body {
     transition: 0.3s;
     float: left;
     margin-top:30px;
-    margin-left:120px;
+    margin-left:160px;
     margin-bottom:70px;
-    margin-right:100px;
+    margin-right:12px;
     width:500px;
     text-align: center;
 }
@@ -112,8 +132,8 @@ body {
     transition: 0.3s;
     float: right;
     margin-top:30px;
-    margin-right:120px;
-    margin-left:70px;
+    margin-right:160px;
+    margin-left:12px;
     margin-bottom:70px;
     width:500px;
     text-align: center;
@@ -152,6 +172,7 @@ button:hover, a:hover {
 }
 
 .bottom{
+    float:bottom;
     background-color:antiquewhite;
     margin-top:30px;
     text-align:center;
@@ -162,6 +183,80 @@ button:hover, a:hover {
     padding-top:20px;
 }
 
+.output_box{
+    outline-style:solid;
+    outline-width:2px;
+    float:left;
+    max-width:600px;
+    margin-top:30px;
+    margin-left:100px;
+    margin-bottom:30px;
+}
+
+.output_box:hover{
+    outline-style:dotted;
+    outline-width:2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.gif_sec{
+    float:right;
+    margin-left:20px;
+    margin-right:100px;
+    margin-top:40px;
+}
+
+.gifs{
+    max-width:420px;
+}
+
+.poke_text{
+    font-family:cursive;
+    color:blue;
+    padding-left:15px;
+    padding-top:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+
+.poke_text:hover{
+    opacity:0.5;
+}
+.poke_text2{
+    font-family:sans-serif;
+    color:darkblue;
+    padding-left:15px;
+    padding-top:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+
+.poke_text2:hover{
+    opacity:0.5
+}
+
+.poke_text3{
+    color:red;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.poke_text3:hover{
+    opacity:0.5;
+    font-style:italic;
+}
+
+.poke_text4{
+    color:red;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+
+.poke_text4:hover{
+    opacity:0.5;
+    font-style:italic;
+}
 
 @media screen and (max-width: 600px) {
     .topnav {
@@ -203,6 +298,20 @@ button:hover, a:hover {
         margin-right:15px;
         max-width:460px;
     }
-}
+    
+    .output_box{
+        float:none;
+        max-width:90%;
+        max-height:90%;
+        margin-left:30px;
+    }
 
- 
+    .gif_sec{
+        float:none;
+        margin-left:30px;
+    }
+    
+    .gifs{
+        max-width:90%;
+    }
+}
